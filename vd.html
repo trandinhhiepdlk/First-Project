@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="flip" style="width: 50px;">Click to slide down panel</div></br>
+<div id="panel">
+        <div class="login-box animated fadeInUp">
+            <div class="box-header">
+                <h2>creat Q&A</h2>
+            </div>
+            <table>
+                <tr>
+                    <td style="width: 150px; height: 30px; padding-left: 30px;"><label class="project">Project</label></td> <td><select style="width: 100px; height: 30px; margin-bottom: 15px;">
+                    <option value="volvo">1</option>
+                    <option value="saab">2</option>
+                    <option value="opel">3</option>
+                    <option value="audi">4</option>
+                </select></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; height: 30px; padding-left: 30px; padding-bottom: 15px;"><label type="text">Sumary</label></td> <td><input type="text" style="margin-bottom: 15px; width: 300px;"></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px;"><label class="De">Desciption</label></td> <td><textarea type="text" name="subject" style="width: 380px; height:200px; margin-bottom: 15px;"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px;"><label type="text">Desciption<br/>(Translate)</label></td> <td><textarea type="text" name="subject" style="width: 380px; height:200px; margin-bottom: 15px;"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px; padding-bottom: 15px;"><label type="text">Label</label></td> <td><select style="width: 100px; height: 30px;  margin-bottom: 15px;">
+                    <option value="volvo">1</option>
+                    <option value="saab">2</option>
+                    <option value="opel">3</option>
+                </select></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px; padding-bottom: 15px;"><label type="project">Complexity</label></td> <td><select style="width: 100px; height: 30px;  margin-bottom: 15px;">
+                    <option value="volvo">1</option>
+                    <option value="saab">2</option>
+                    <option value="opel">3</option>
+                    <option value="audi">4</option>
+                </select></td>
+                </tr>
+                <td style="width: 150px; padding-left: 30px; padding-bottom: 15px;"><label type="project">Priority</label></td> <td><select style="width: 100px; height: 30px; margin-bottom: 15px;">
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="opel">3</option>
+                <option value="audi">4</option>
+            </select></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px; padding-bottom: 15px;"><label type="text">Attachment</label></td> <td ><input type="file" ></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px; padding-bottom: 15px;"><label type="image">Due date</label></td> <td><input type="date" style="margin-bottom: 15px;"></td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; padding-left: 30px; padding-bottom: 15px;"><label type="Assignee">Assignee</label></td> <td><select style="width: 100px; height: 30px; margin-bottom: 15px;">
+                    <option value="volvo">1</option>
+                    <option value="saab">2</option>
+                    <option value="opel">3</option>
+                    <option value="audi">4</option>
+                </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-left: 260px;"><button type="submit" style="font-family: newfont; font-size: 16px;">Create</button></td>
+                </tr>
+            </table>
+        </div>
+</div>
+</body>
+</html>
